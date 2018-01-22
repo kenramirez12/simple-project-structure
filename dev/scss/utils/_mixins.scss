@@ -2,3 +2,9 @@
 	font-size: $size;
 	font-size: ($size / $base) * 1rem;
 }
+
+@mixin breakpoint($size) {
+	@media (max-width: $size) {
+		@content;
+	}
+}
