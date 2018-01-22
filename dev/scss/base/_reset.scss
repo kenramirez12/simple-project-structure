@@ -1,8 +1,21 @@
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     font-family: sans-serif;
     font-size: $base-font-size;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+    outline: 0;
 }
